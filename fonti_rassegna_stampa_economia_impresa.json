@@ -1,0 +1,111 @@
+{
+  "descrizione": "Elenco fonti per rassegna stampa quotidiana su economia d'impresa, economia reale, processi produttivi, internazionalizzazione, innovazione di prodotto e Made in Italy",
+  "ultimo_aggiornamento": "2026-07-06",
+  "nota_metodologica": "Il campo rss_url e' valorizzato solo per i feed la cui esistenza e' stata verificata tramite ricerca. Dove non e' stato trovato un feed pubblico, rss_disponibile e' false e il campo lo segnala esplicitamente: non sono stati inventati URL non verificati.",
+  "fonti": [
+    {
+      "nome": "Il Sole 24 Ore",
+      "categoria": "Quotidiano economico generalista",
+      "url_sito": "https://www.ilsole24ore.com/",
+      "rss_disponibile": true,
+      "rss_url": "https://www.ilsole24ore.com/rss",
+      "note": "Pagina hub con elenco di feed RSS per sezione (Economia, Imprese, Finanza, ecc.); non ho verificato l'URL diretto della singola categoria 'Imprese', va selezionato dalla pagina hub."
+    },
+    {
+      "nome": "Radiocor (Il Sole 24 Ore)",
+      "categoria": "Agenzia di stampa economico-finanziaria",
+      "url_sito": "https://www.ilsole24ore.com/sez/radiocor",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Servizio distribuito principalmente su piattaforme proprietarie/terminali e in abbonamento; nessun feed RSS pubblico individuato."
+    },
+    {
+      "nome": "Milano Finanza (MF)",
+      "categoria": "Quotidiano economico-finanziario",
+      "url_sito": "https://www.milanofinanza.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Nessun feed RSS pubblico individuato nelle ricerche effettuate."
+    },
+    {
+      "nome": "Italia Oggi",
+      "categoria": "Quotidiano economico-giuridico",
+      "url_sito": "https://www.italiaoggi.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Nessun feed RSS pubblico individuato nelle ricerche effettuate."
+    },
+    {
+      "nome": "Pambianconews",
+      "categoria": "Trade press moda, lusso, Made in Italy",
+      "url_sito": "https://www.pambianconews.com/",
+      "rss_disponibile": true,
+      "rss_url": "https://www.pambianconews.com/feed-pambianconews/",
+      "note": "Pagina feed indicata dal sito stesso; non sono riuscito a validare il contenuto XML del feed (fetch ha restituito pagina vuota), da verificare con un reader RSS."
+    },
+    {
+      "nome": "MF Fashion",
+      "categoria": "Trade press moda e lusso",
+      "url_sito": "https://www.mffashion.com/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Nessun feed RSS pubblico individuato nelle ricerche effettuate."
+    },
+    {
+      "nome": "FashionNetwork Italia",
+      "categoria": "Trade press moda, lusso, beauty",
+      "url_sito": "https://it.fashionnetwork.com/",
+      "rss_disponibile": true,
+      "rss_url": "https://it.fashionnetwork.com/rss/feed/it,3.xml",
+      "note": "Feed news generale in italiano; pagina hub con altri feed di sezione su https://it.fashionnetwork.com/rss/."
+    },
+    {
+      "nome": "Agenzia ICE",
+      "categoria": "Fonte istituzionale - internazionalizzazione, export",
+      "url_sito": "https://www.ice.it/",
+      "rss_disponibile": true,
+      "rss_url": "https://www.ice.it/it/feed-rss",
+      "note": "Pagina con elenco di feed RSS istituzionali (statistiche, comunicati, bandi)."
+    },
+    {
+      "nome": "SACE",
+      "categoria": "Fonte istituzionale - credito export, internazionalizzazione",
+      "url_sito": "https://www.sace.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Trovata solo iscrizione a newsletter (https://www.sace.it/iscriviti-alla-newsletter); nessun feed RSS pubblico individuato."
+    },
+    {
+      "nome": "ISTAT",
+      "categoria": "Fonte istituzionale - statistiche su commercio estero e produzione industriale",
+      "url_sito": "https://www.istat.it/",
+      "rss_disponibile": true,
+      "rss_url": "https://www.istat.it/en/other-services/feed-rss/",
+      "note": "Servizio di feed RSS personalizzabile per tema/tipo di comunicato; esiste anche una vecchia pagina https://www4.istat.it/it/informazioni/per-gli-utenti/feed-rss."
+    },
+    {
+      "nome": "Confindustria (Centro Studi)",
+      "categoria": "Fonte istituzionale - congiuntura industriale",
+      "url_sito": "https://www.confindustria.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "Nessun feed RSS pubblico individuato nelle ricerche effettuate; URL del sito non verificato con ricerca dedicata in questa sessione."
+    },
+    {
+      "nome": "Mediobanca R&S (Ricerche e Studi)",
+      "categoria": "Centro studi - analisi su medie imprese e distretti industriali",
+      "url_sito": "https://www.mbres.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "URL del sito non verificato con ricerca dedicata in questa sessione; nessun feed RSS individuato."
+    },
+    {
+      "nome": "Prometeia",
+      "categoria": "Centro studi - analisi economiche e settoriali",
+      "url_sito": "https://www.prometeia.it/",
+      "rss_disponibile": false,
+      "rss_url": null,
+      "note": "URL del sito non verificato con ricerca dedicata in questa sessione; nessun feed RSS individuato."
+    }
+  ]
+}
