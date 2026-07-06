@@ -1,0 +1,36 @@
+name: Rassegna Stampa
+
+on:
+  schedule:
+    - cron: "10 5 * * *"   # 07:10 ora legale (CEST)
+    - cron: "10 6 * * *"   # 07:10 ora solare (CET)
+  workflow_dispatch:
+
+concurrency:
+  group: rassegna-stampa
+  cancel-in-progress: false
+
+jobs:
+  invia-rassegna:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del codice
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa le dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Genera e invia la rassegna
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: python main.py
